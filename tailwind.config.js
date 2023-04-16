@@ -11,7 +11,8 @@ module.exports = {
                 
             },
             fontFamily: {
-                sulphurPoint: ["Sulphur Point", "sans - serif"],
+                sulphurPoint: ["Sulphur Point", "sans-serif"],
+                roboto: ["roboto", "sans-serif"],
             },
         },
     },

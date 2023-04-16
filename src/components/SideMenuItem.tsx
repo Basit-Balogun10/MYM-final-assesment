@@ -19,7 +19,7 @@ const SideMenuItem = ({
         >
             <div
                 className={`w-[50%] ${isActive ? "text-slate-400" : ""}
-                mx-auto flex items-center space-x-4 text-xs font-sembold`}
+                mx-auto flex items-center space-x-4 text-xs`}
             >
                 {children}
                 <p>{text}</p>

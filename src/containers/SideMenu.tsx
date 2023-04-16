@@ -26,9 +26,9 @@ const navigationMenuItems: navigationMenuItem[] = [
 
 const SideMenu = () => {
     return (
-        <section className="py-8 pb-6 h-screen basis-[15%] bg-black text-grey">
+        <section className="h-screen  basis-[15%] py-6 space-y-4 bg-black text-grey">
             {/* LOGO */}
-            <div className="w-1/2 mx-auto mb-12 flex items-center justify-center space-x-2">
+            <div className="w-1/2 mx-auto mb-8 flex items-center justify-center space-x-2">
                 <Logo />
                 <h1 className="text-">Realply</h1>
             </div>
@@ -36,7 +36,7 @@ const SideMenu = () => {
             <div>
                 {navigationMenuItems.map((item, index) => (
                     <SideMenuItem
-                        additionalStyles={` ${index === 4 ? "mt-24" : "mt-2"}`}
+                        additionalStyles={` ${index === 4 ? "mt-10" : "mt-1"}`}
                         isActive={item.isActive}
                         text={item.name}
                     >
@@ -45,7 +45,27 @@ const SideMenu = () => {
                 ))}
             </div>
             {/* PLAN UPGRADE NOTICE */}
-            <div></div>
+            <div className="w-4/5 space-y-2 p-4 mx-auto border border-white/30 rounded-xl">
+                <div className="font-roboto">
+                    <h3 className="text-grey text-xs font-bold">
+                        Your free trial is about to end in
+                    </h3>
+                    <h3 className="text-grey text-lg font-bold">10 days.</h3>
+                </div>
+                <div className="space-y-2">
+                    <p className="text-slate-400 text-[0.6rem] leading-tight">
+                        You will not be billed during your free trial
+                    </p>
+                    <p className="text-slate-400 text-[0.6rem] leading-tight">
+                        You will not be billed during your free trial.To keep
+                        your projects running after the trial end, upgrade to a
+                        paid option.
+                    </p>
+                </div>
+                <button className="w-full px-6 py-2 bg-white/5 hover:bg-white/10 font-roboto text-xs text-center rounded-md ring-1 ring-white/30 transition-colors ease-in-out">
+                    Upgrade
+                </button>
+            </div>
             {/* LOGOUT */}
             <SideMenuItem
                 additionalStyles="mt-8"
