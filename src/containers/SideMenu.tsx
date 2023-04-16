@@ -28,7 +28,7 @@ const SideMenu = () => {
     return (
         <section className="py-8 pb-6 h-screen basis-[15%] bg-black text-grey">
             {/* LOGO */}
-            <div className="w-1/2 mx-auto flex items-center justify-center space-x-2">
+            <div className="w-1/2 mx-auto mb-12 flex items-center justify-center space-x-2">
                 <Logo />
                 <h1 className="text-">Realply</h1>
             </div>
@@ -36,7 +36,7 @@ const SideMenu = () => {
             <div>
                 {navigationMenuItems.map((item, index) => (
                     <SideMenuItem
-                        additionalStyles={` ${index === 4 ? "mt-24" : "mt-4"}`}
+                        additionalStyles={` ${index === 4 ? "mt-24" : "mt-2"}`}
                         isActive={item.isActive}
                         text={item.name}
                     >
