@@ -4,15 +4,17 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                greenBg: "#C2ECC1",
-                greenText: "#608662",
                 blueBg: "#C5C7F6",
-                grey: "#F8F8F8",
+                greenBg: "#DDF6DE",
+                greenText: "#608662",
+                grayBg: "#F8F8F8",
+                grayText: "#94979A",
                 
             },
             fontFamily: {
-                sulphurPoint: ["Sulphur Point", "sans-serif"],
                 roboto: ["roboto", "sans-serif"],
+                rubik: ["Rubik", "sans-serif"],
+                sulphurPoint: ["Sulphur Point", "sans-serif"],
             },
         },
     },

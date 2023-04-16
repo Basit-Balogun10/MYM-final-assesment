@@ -1,4 +1,4 @@
-import React, { ReactElement, useState } from "react";
+import React, { ReactElement } from "react";
 import Logo from "../components/svg/Logo";
 import SideMenuItem from "../components/SideMenuItem";
 import Grid from "../components/svg/Grid";
@@ -26,7 +26,7 @@ const navigationMenuItems: navigationMenuItem[] = [
 
 const SideMenu = () => {
     return (
-        <section className="h-screen  basis-[15%] py-6 space-y-4 bg-black text-grey">
+        <section className="h-screen basis-[15%] py-6 space-y-4 bg-black text-grayBg">
             {/* LOGO */}
             <div className="w-1/2 mx-auto mb-8 flex items-center justify-center space-x-2">
                 <Logo />
@@ -36,7 +36,7 @@ const SideMenu = () => {
             <div>
                 {navigationMenuItems.map((item, index) => (
                     <SideMenuItem
-                        additionalStyles={` ${index === 4 ? "mt-10" : "mt-1"}`}
+                        additionalStyles={` ${index === 4 ? "mt-9" : "mt-1"}`}
                         isActive={item.isActive}
                         text={item.name}
                     >
@@ -47,10 +47,10 @@ const SideMenu = () => {
             {/* PLAN UPGRADE NOTICE */}
             <div className="w-4/5 space-y-2 p-4 mx-auto border border-white/30 rounded-xl">
                 <div className="font-roboto">
-                    <h3 className="text-grey text-xs font-bold">
+                    <h3 className="text-grayBg text-xs font-bold">
                         Your free trial is about to end in
                     </h3>
-                    <h3 className="text-grey text-lg font-bold">10 days.</h3>
+                    <h3 className="text-grayBg text-lg font-bold">10 days.</h3>
                 </div>
                 <div className="space-y-2">
                     <p className="text-slate-400 text-[0.6rem] leading-tight">

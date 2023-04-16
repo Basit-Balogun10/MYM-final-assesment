@@ -15,17 +15,33 @@ const SideMenuItem = ({
 }: propsType) => {
     return (
         <div
-            className={`${additionalStyles} ${isActive ? "border-l-[3px] border-l-grey" : "border-l-2 border-black"} py-2 hover:bg-white/10 hover:rounded cursor-pointer transition-colors ease-in-out`}
+            className={`${additionalStyles} group py-2 hover:bg-white/10 hover:rounded-md cursor-pointer transition-colors ease-in-out`}
         >
             <div
-                className={`w-[50%] ${isActive ? "text-slate-400" : ""}
-                mx-auto flex items-center space-x-4 text-xs`}
+                className={`flex items-center space-x-11 ${
+                    isActive ? "text-slate-400" : ""
+                }`}
             >
-                {children}
-                <p>{text}</p>
+                <div
+                    className={`w-2 h-4 border-l-2 ${
+                        isActive
+                            ? "border-l-grayBg"
+                            : "border-l-black"
+                    } group-hover:border-l-transparent`}
+                ></div>
+                <div className={`flex items-center space-x-4 text-xs`}>
+                    {children}
+                    <p>{text}</p>
+                </div>
             </div>
         </div>
     );
 };
 
 export default SideMenuItem;
+
+// ${
+//                 isActive
+//                     ? "border-l-[3px] border-l-grayBg"
+//                     : "border-l-2 border-black"
+//             }
