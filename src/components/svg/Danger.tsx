@@ -1,6 +1,6 @@
 import React from 'react'
 
-const danger = () => {
+const Danger = () => {
   return (
       <svg
           width="20"
@@ -34,4 +34,4 @@ const danger = () => {
   );
 }
 
-export default danger
+export default Danger

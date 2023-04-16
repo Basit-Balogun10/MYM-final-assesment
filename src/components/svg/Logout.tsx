@@ -1,6 +1,6 @@
 import React from 'react'
 
-const logout = () => {
+const Logout = () => {
   return (
       <svg
           width="20"
@@ -41,4 +41,4 @@ const logout = () => {
   );
 }
 
-export default logout
+export default Logout

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const pieChart = () => {
+const PieChart = () => {
   return (
       <svg
           width="361"
@@ -79,4 +79,4 @@ const pieChart = () => {
   );
 }
 
-export default pieChart
+export default PieChart
