@@ -18,7 +18,7 @@ type navigationMenuItem = {
 const navigationMenuItems: navigationMenuItem[] = [
     { name: "Dashboard", icon: <Grid />, isActive: true },
     { name: "Message", icon: <Message />, isActive: false },
-    { name: "Calendar", icon: <Calculator />, isActive: false },
+    { name: "Calendar", icon: <Calculator color="#F8F8F8" size="20" />, isActive: false },
     { name: "Campaigns", icon: <Flash />, isActive: false },
     { name: "Settings", icon: <Settings />, isActive: false },
     { name: "Help", icon: <Danger />, isActive: false },
@@ -26,17 +26,18 @@ const navigationMenuItems: navigationMenuItem[] = [
 
 const SideMenu = () => {
     return (
-        <section className="h-screen basis-[15%] py-6 space-y-4 bg-black text-grayBg">
+        <section className="basis-[40%] md:basis-[20%] xl:basis-[15%] md:w-[20%] flex-1 lg:flex-none grow shrink-0 lg:shrink-[initial] py-6 space-y-4 bg-black text-grayBg">
             {/* LOGO */}
-            <div className="w-1/2 mx-auto mb-8 flex items-center justify-center space-x-2">
-                <Logo />
-                <h1 className="text-">Realply</h1>
+            <div className="w-3/4 md:w-1/2 ml-10 sm:ml-14 md:mx-auto mb-6 flex items-center md:justify-center space-x-2">
+                <div className="flex-initial"><Logo /></div>
+                <h1 className="md:text-sm">Realply</h1>
             </div>
             {/* NAVIGATION MENU */}
             <div>
                 {navigationMenuItems.map((item, index) => (
                     <SideMenuItem
-                        additionalStyles={` ${index === 4 ? "mt-9" : "mt-1"}`}
+                        key={index}
+                        additionalStyles={` ${index === 4 ? "mt-72 sm:mt-9" : "mt-1"}`}
                         isActive={item.isActive}
                         text={item.name}
                     >
@@ -45,7 +46,7 @@ const SideMenu = () => {
                 ))}
             </div>
             {/* PLAN UPGRADE NOTICE */}
-            <div className="w-4/5 space-y-2 p-4 mx-auto border border-white/30 rounded-xl">
+            <div className="hidden sm:block w-4/5 space-y-2 p-4 mx-auto border border-white/30 rounded-xl">
                 <div className="font-roboto">
                     <h3 className="text-grayBg text-xs font-bold">
                         Your free trial is about to end in

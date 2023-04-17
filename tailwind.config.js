@@ -16,6 +16,9 @@ module.exports = {
                 rubik: ["Rubik", "sans-serif"],
                 sulphurPoint: ["Sulphur Point", "sans-serif"],
             },
+            screens: {
+                'xl': '1200px'
+            }
         },
     },
     plugins: [],

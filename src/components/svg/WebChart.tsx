@@ -3,8 +3,8 @@ import React from 'react'
 const WebChart = () => {
   return (
       <svg
-          width="264"
-          height="296"
+          width="250"
+          height="180"
           viewBox="0 0 264 296"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"

@@ -3,8 +3,8 @@ import React from 'react'
 const PieChart = () => {
   return (
       <svg
-          width="361"
-          height="272"
+          width="250"
+          height="180"
           viewBox="0 0 361 272"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
