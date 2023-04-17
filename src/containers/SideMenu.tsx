@@ -46,7 +46,7 @@ const SideMenu = () => {
                 ))}
             </div>
             {/* PLAN UPGRADE NOTICE */}
-            <div className="hidden sm:block w-4/5 space-y-2 p-4 mx-auto border border-white/30 rounded-xl">
+            <div className="hidden sm:block w-4/5 space-y-2 p-4 mx-auto border border-white/30 rounded-3xl">
                 <div className="font-roboto">
                     <h3 className="text-grayBg text-xs font-bold">
                         Your free trial is about to end in

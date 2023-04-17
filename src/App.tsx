@@ -6,7 +6,7 @@ import MainSection from './containers/MainSection';
 
 function App() {
   return (
-    <div className="flex items-stretch overflow-x-scroll">
+    <div className="flex items-stretch max-h-screen overflow-x-scroll lg:overflow-x-hidden">
       <SideMenu />
       <MiddleSection />
       <MainSection />
